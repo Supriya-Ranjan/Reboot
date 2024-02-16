@@ -1,0 +1,122 @@
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100vw;
+    height: 91vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first{
+    width: 18vw;
+    height: 91vh;
+    background-color: #008080;
+    box-shadow: inset -3px -3px 6px rgba(0,0,0,.4);
+    overflow: hidden;
+}
+
+.first a {
+    color: #050505;
+    background-color: #008080;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 3% 4%;
+    outline: none;
+    border: 1px solid #dddbcb;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    box-shadow: -3px -3px 6px #dddbcb57;
+}
+
+.second{
+    width: 82vw;
+    height: 91vh;
+    background-color: #dddbcb;
+    padding: 0px 5%;
+}
+
+.second .tableContainer{
+    margin: 3%  auto;
+    height: 75%;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 3px 3px 8px #0080805e;
+}
+
+.second .tableContainer table {
+    width: 100%;
+}
+.second .tableContainer th, td {
+    border: 1px solid black;
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+}
+.second .tableContainer th {
+    font-size: 2em;
+    background-color: #008080;
+    color: #050505;
+}
+
+.second .tableContainer td button{
+    width: 50px;
+    margin: 0px 7px;
+    padding: 2px 4px;
+    font-size: 1rem;
+}
+
+.second .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: #008080;
+    padding: 10px; 
+    box-shadow: 3px 3px 6px #00808059;
+}
+
+.second .pagination a {
+    color: #dddbcb;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .first {
+        width: 70%;
+        height: auto;
+    }
+
+    .first a {
+        font-size: 1.2rem;
+        margin: 2% 3%;
+        padding: 4px;
+    }
+
+    .second .tableContainer {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 90%;
+        overflow-x: auto;
+    }
+
+    .second .pagination {
+        flex-wrap: wrap;
+    }
+
+    .second .pagination a {
+        margin: 5px;
+        font-size: 1rem;
+    }
+}
